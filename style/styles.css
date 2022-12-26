@@ -25,9 +25,9 @@ body {
 }
 .container {
     width: 1158px; 
-    padding-left: 15;
-    padding-right: 15;
-    outline: 1px solid red;
+    padding-left: 15px;
+    padding-right: 15px;
+    
     margin: 0 auto;}
 .list {
     list-style: none;
@@ -59,6 +59,9 @@ padding-top: 24px;
 padding-bottom: 24px;
 
 }
+.logo  {
+    margin-right: 76px;
+}
 .container-header {
     display: flex;
 }
@@ -67,11 +70,12 @@ padding-bottom: 24px;
 }
 .header-list {
     display: flex;
-    margin-left: 76px;
+   
 }
 .list {
     margin-left: auto;
 }
+
 .header-item:not( :last-child){
     margin-right: 40px;
 }
@@ -115,6 +119,7 @@ color: var(--prime-text-color);
     background-color: var(--title-text-color);
     padding-top: 188px;
     padding-bottom: 188px;
+    text-align: center;
 }
 .hero-title {
 font-weight: 600;
@@ -131,6 +136,7 @@ margin-bottom: 48px;
 .one {
     padding-top: 120px;
     padding-bottom: 120px;
+    gap: 24px;
 }
 .hero-btn {
 font-family: 'Roboto';
@@ -142,6 +148,9 @@ color: var(--white-text);
 cursor: pointer;
 background: var(--accent-color);
 border: none;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding: 16px 32px;
 
 }
 .hero-btn:hover {
@@ -169,6 +178,13 @@ line-height: 1.1;
 letter-spacing: 0.02em;
 color: var(--title-text-color);
 margin-bottom: 72px;
+text-align: center;
+}
+.card-one{
+    gap:  24px;   
+}
+.card-two {
+    gap: 24px;
 }
 .team {
 font-weight: 600;
@@ -178,6 +194,7 @@ letter-spacing: 0.02em;
 color: var(--title-text-color);
 background-color: var(--white-text);
 margin-bottom: 8px;
+text-align: center;
 
 }
 .hero-section-team {
@@ -189,12 +206,14 @@ padding-bottom: 120px;
 font-weight: 400;
 letter-spacing: 0.02em;
 color: var(--prime-text-color);
-margin-bottom: 32px;
+margin-bottom: 32px; 
+text-align: center;
 }
 .ending-text {
 font-weight: 400;
 letter-spacing: 0.02em;
-color: var(--white-background);
+color: var(--white-background); 
+width: 264px;
 }
 .team-link {
 background: var(--white-text);
@@ -214,9 +233,10 @@ color: var(--white);
     background: var(--title-text-color);
     padding-top: 100px;
     padding-bottom: 100px;
+    align-self: start;
 
 }
-.logo link {
+.logo-ending {
     margin-bottom: 16px;
 }
 
@@ -238,11 +258,22 @@ color: var(--title-text-color)
 }
 .cap {
     background: var(--white-text);
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.cap-navigation {
+    display: flex;
 }
 .cap-list {
     font-weight: 600;
     letter-spacing: 0.02em;
     color: var(--title-text-color); 
+}
+.cap-link {
+    gap: 40px;
+}
+.container-cap {
+    display: flex;
 }
 .cap-list:hover, .cap-list:focus  {
     color: var(--accent-color);
@@ -264,33 +295,73 @@ color: var(--title-text-color)
     color: var(--prime-text-color); 
 }
 .midle-btn {
+ display: flex;
+ flex-direction: row;
+ justify-content: center ;
+ align-items: center;
+ padding: 12px 24px;
+ margin-right: 24px;
+ border: 1px solid #E7E9FC;
+ border-radius: 4px;
+ font-weight: 600;
+ text-align: center;
+ 
+}
+.button {
+    padding-top: 96px;
+    justify-content: center ;
+    padding-bottom: 72px;
+}
+.midle-btn {
 font-family: 'Roboto';
 font-weight: 600;
 letter-spacing: 0.04em;
 cursor: pointer;
 color: var(--accent-color)
 }
+
 .midle-btn:hover,.midle-btn:focus {
    color: var(--white-text); 
    background: var(--accent-color)
 }
+.img-card {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+   
+}
 .midle-item {
     background-color:var(--white-text);
+    margin-right: 24px;
+    background: #FFFFFF;
+
+}
+.midle-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.midle-item .link {
+    margin-bottom: 32px;
+}
+.photo-img {
+    margin-bottom: 32px;
 }
 .midle-description{
 font-weight: 600;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-color: var(--title-text-color)
+color: var(--title-text-color);
+margin-bottom: 8px;
 }
 .midle-text {
 font-weight: 400;
 letter-spacing: 0.02em;
-color: var(--prime-text-color)
+color: var(--prime-text-color);
+margin-bottom: 32px;
 }
 .logo-studio-end {
-    font-family: 'Raleway';
+font-family: 'Raleway';
 font-weight: 800;
 font-size: 18px;
 line-height: 1.16;
