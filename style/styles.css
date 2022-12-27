@@ -42,7 +42,7 @@ body {
 }
 
 .web {
-font-family: 'Raleway' sans-serif;
+font-family: 'Raleway', sans-serif;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.33;
@@ -50,7 +50,7 @@ color: var(--accent-color);
 text-transform: uppercase;
 }
 .studio {
-font-family: 'Raleway' sans-serif;
+font-family: 'Raleway', sans-serif;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.33;
@@ -62,7 +62,7 @@ color: var(--title-text-color);
 background-color: var(--white-text);
 padding-top: 24px;
 padding-bottom: 24px;
-
+border-bottom: 1px solid #E7E9FC;
 }
 .logo  {
     margin-right: 76px;
@@ -140,20 +140,29 @@ color: var(--prime-text-color);
     text-align: center;
 }
 .hero-title {
-font-weight: 500;
+font-weight: 700;
 font-size: 56px;
 line-height: 1.09;
 letter-spacing: 0.02em;
 color: var(--white-text);
 margin-bottom: 48px;
+width: 494px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+
+
 
 }
+.hero-section {
+    padding-bottom: 0;
+}
 .hero-section-two {
-    padding-bottom: 120p;
+    padding-bottom: 120px;
 }
 .one {
     padding-top: 120px;
-    padding-bottom: 120p;
+    padding-bottom: 120px;
     gap: 24px;
 }
 .hero-btn {
@@ -172,8 +181,10 @@ padding: 16px 32px;
 
 }
 .hero-btn:hover {
-    color: var(--accent-color);
-    background: var(--white); 
+    color: var(--white-text);
+    background: #404BBF; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
 
 .hero-title-two {
@@ -218,7 +229,7 @@ text-align: center;
 .hero-section-team {
 background: var(--white);
 padding-top: 120px;
-padding-bottom: 120x;
+padding-bottom: 120px;
 }
 .activity {
 font-weight: 400;
@@ -243,7 +254,7 @@ border-radius: 0px 0px 4px 4px;
     margin-bottom: 32px;
 }
 .studio-ending {
-font-family: 'Raleway'sans-serif;
+font-family: 'Raleway',sans-serif;
 font-weight: 800;
 font-size: 18px;
 line-height: 21px;
@@ -263,7 +274,7 @@ text-transform: uppercase;
 
 /* ------------Porfolio */
 .logo-web {
-    font-family: 'Raleway'sans-serif;
+    font-family: 'Raleway',sans-serif;
    font-weight: 800;
     font-size: 18px;
     line-height: 1.3;
@@ -271,7 +282,7 @@ color: var(--accent-color);
 text-transform: uppercase;
 }
 .logo-studio {
-font-family: 'Raleway' sans-serif;
+font-family: 'Raleway', sans-serif;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.3;
@@ -297,6 +308,7 @@ clip: rect(0
     background: var(--white-text);
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
 }
 .cap-navigation {
     display: flex;
@@ -340,7 +352,7 @@ clip: rect(0
  margin-right: 24px;
  border: 1px solid #E7E9FC;
  border-radius: 4px;
- font-weight: 600;
+ font-weight: 500;
  text-align: center;
  
 }
@@ -351,15 +363,17 @@ clip: rect(0
 }
 .midle-btn {
 font-family: 'Roboto';
-font-weight: 600;
+font-weight: 500;
 letter-spacing: 0.04em;
 cursor: pointer;
 color: var(--accent-color)
 }
 
 .midle-btn:hover,.midle-btn:focus {
-   color: var(--white-text); 
-   background: var(--accent-color)
+     color: var(--white-text);
+    background: #404BBF; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
 .img-card {
     display: flex;
@@ -391,23 +405,23 @@ color: var(--accent-color)
     margin-bottom: 32px;
 }
 .midle-description{
-font-weight: 600;
+font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--title-text-color);
 margin-bottom: 8px;
-text-align: center;
+
 }
 .midle-text {
 font-weight: 400;
 letter-spacing: 0.02em;
 color: var(--prime-text-color);
 margin-bottom: 32px;
-text-align: center;
+
 }
 .logo-studio-end {
-font-family: 'Raleway';
+font-family: 'Raleway',sans-serif;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.16;
